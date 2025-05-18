@@ -2,15 +2,14 @@ use anchor_lang::prelude::*;
 
 // This is your program's public key and it will update
 // automatically when you build the project.
-declare_id!("94L2mJxVu6ZMmHaGsCHRQ65Kk2mea6aTnwWjSdfSsmBC");
+declare_id!("3w6dJNqS1rxksirovF8jBCusgrvE5CjQdx71PxZa26Qn");
 
 #[program]
 mod journal {
     use super::*;
 
     pub fn create_journal_entry(
-        ctx: Context<CreateEntry>,
-        title: String,
+        ctx: Context<CreateEntry>        title: String,
         message: String,
     ) -> Result<()> {
         msg!("Journal Entry Created");

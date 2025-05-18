@@ -1,4 +1,6 @@
 [toolchain]
+solana = "2.1.22"
+anchor_version = "0.31.1"
 
 [features]
 resolution = true
